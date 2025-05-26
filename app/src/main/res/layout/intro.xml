@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/intro"
+    android:background="@color/light_grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/formWrapper"
+        android:layout_width="348dp"
+        android:layout_height="635dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/introImg"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:src="@drawable/intro_img"
+            android:contentDescription="@string/forwardBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSpark"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/spark"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/introImg"
+            app:layout_constraintTop_toBottomOf="@+id/introImg" />
+
+        <TextView
+            android:id="@+id/textIdeas"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/ideas"
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/textSpark"
+            app:layout_constraintTop_toBottomOf="@+id/introImg" />
+
+        <TextView
+            android:id="@+id/textBuild"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/build"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/textSpark"
+            app:layout_constraintTop_toBottomOf="@+id/textSpark" />
+
+        <TextView
+            android:id="@+id/textTogether"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/together"
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/textBuild"
+            app:layout_constraintTop_toBottomOf="@+id/textIdeas" />
+
+        <TextView
+            android:id="@+id/tagline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/tagline1"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textBuild"
+            app:layout_constraintTop_toBottomOf="@+id/textTogether" />
+
+        <TextView
+            android:id="@+id/tagline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/tagline2"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textBuild"
+            app:layout_constraintTop_toBottomOf="@+id/tagline1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/introImg"
+            app:srcCompat="@drawable/baseline_arrow_forward_ios_24"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

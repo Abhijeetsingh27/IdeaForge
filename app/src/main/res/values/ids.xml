@@ -1,0 +1,11 @@
+<resources>
+    <item name="ideaTitleTextView" type="id" />
+    <item name="ideaDescriptionTextView" type="id" />
+    <item name="userNameTextView" type="id" />
+    <item name="copiedFilesTextView" type="id" />
+    <item name="linksTextView" type="id" />
+    <item name="filesTextView" type="id" />
+    <item name="descriptionTextView" type="id" />
+    <item name="titleTextView" type="id"/>
+
+</resources>

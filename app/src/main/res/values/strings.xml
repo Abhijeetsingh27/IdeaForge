@@ -1,0 +1,35 @@
+<resources>
+    <!--    Intro-->
+    <string name="spark">Spark</string>
+    <string name="ideas">!deas &amp;</string>
+    <string name="build">Build</string>">
+    <string name="together">Together.</string>">
+    <string name="tagline1">Explore and discover exciting ideas tailored to </string>
+    <string name="tagline2">your interests and major.</string>
+
+    <!--    Log In-->
+    <string name="app_name">IdeaForge</string>
+    <string name="login_img">Log In Image</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOG IN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Don\'t have an account?</string>
+    <string name="sign_up_now">Sign up now</string>
+
+    <!--    Sign Up-->
+    <string name="create_an_account">Create An Account</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="cnfPassword">Confirm Password</string>
+    <string name="signup">SIGN UP</string>
+    <string name="forwardBtn">Forward Button</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="nav_drawer">Navigation Drawer</string>
+    <string name="copied_files_icon">Copied files icon</string>
+
+
+
+
+</resources>

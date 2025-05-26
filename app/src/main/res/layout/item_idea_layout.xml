@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:background="@color/orange"
+    android:hapticFeedbackEnabled="false"
+    app:cardBackgroundColor="@color/orange"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/ideaTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Idea title"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="12dp"
+            android:text="Title: "
+            android:textColor="?attr/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:transitionName="title_transition" />
+
+        <TextView
+            android:id="@+id/ideaDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Idea description"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="16dp"
+            android:text="Description: "
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="?attr/colorOutlineVariant" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Problem icon"
+                android:src="@drawable/ic_problem"
+                android:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/problemTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:contentDescription="Problem statement"
+                android:fontFamily="sans-serif"
+                android:text="Problem Statement: "
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="USP icon"
+                android:src="@drawable/ic_usp"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/uspTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:contentDescription="Unique selling proposition"
+                android:fontFamily="sans-serif"
+                android:text="USP: "
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Link icon"
+                android:src="@drawable/ic_link"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/linksTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:clickable="true"
+                android:contentDescription="Web link"
+                android:focusable="true"
+                android:fontFamily="sans-serif"
+                android:text="Link: "
+                android:textColor="?attr/colorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="File icon"
+                android:src="@drawable/ic_file"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/filesTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Attached files"
+                android:focusable="true"
+                android:fontFamily="sans-serif"
+                android:text="Files: "
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/copied_files_icon"
+
+                android:src="@drawable/ic_copy" />
+
+            <TextView
+                android:id="@+id/copiedFilesTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="Copied files"
+                android:focusable="true"
+                android:fontFamily="sans-serif"
+                android:text="Copied Files: "
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewFilesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="View all files button"
+            android:text="View All Files"
+            android:textColor="@android:color/white"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/ic_view" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

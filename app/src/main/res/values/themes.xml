@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IdeaForge" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+    </style>
+
+    <style name="Theme.IdeaForge" parent="Base.Theme.IdeaForge" />
+</resources>
